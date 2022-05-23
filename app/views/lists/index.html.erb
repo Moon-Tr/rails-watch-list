@@ -1,0 +1,16 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+<div class="banner"> <img class="bg-overlay" src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+	<div class="container">
+		<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+			<div class="home_slider_title"> <h1 style="color:white">Your incredible movies' list</h1></div>
+			<div class="home_slider_subtitle">
+        <ul>
+          <% @lists.each do |list| %>
+            <li><%= link_to list.name, list_path(list) %></li>
+          <% end %>
+        </ul>
+      </div>
+			<%= link_to "Create a new List", new_list_path %>
+		</div>
+	</div>
+</div>

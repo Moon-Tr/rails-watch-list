@@ -10,3 +10,8 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+
+.banner{background-size: cover; position:relative}
+.banner img{background-size: cover; width:100%; height:100%}
+.banner .container{position: absolute;background-size: cover; left:0; right:0; top:50%; text-align:left; transform:translateY(-50%)}
